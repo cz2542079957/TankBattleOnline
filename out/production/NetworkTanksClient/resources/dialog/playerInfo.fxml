@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom,#00fffc,#63e6be);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dialog.PlayerInfo">
+    <children>
+        <Button fx:id="start" layoutX="860.0" layoutY="586.0" mnemonicParsing="false" onMouseClicked="#gameStart" prefHeight="78.0" prefWidth="245.0" style="-fx-background-color: #fa5252; -fx-background-radius: 20px;" text="开始匹配" textFill="WHITE">
+            <font>
+                <Font name="HarmonyOS Sans SC Bold" size="33.0" />
+            </font>
+        </Button>
+        <Label fx:id="nickName" layoutX="84.0" layoutY="37.0" prefHeight="55.0" prefWidth="387.0" text="你好，玩家">
+            <font>
+                <Font name="HarmonyOS Sans SC Medium" size="36.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="86.0" layoutY="134.0" prefHeight="193.0" prefWidth="369.0" style="-fx-border-radius: 15px; -fx-background-radius: 25px; -fx-background-color: #ffe066;">
+            <children>
+                <Label fx:id="total_battels" layoutX="44.0" layoutY="45.0" prefHeight="31.0" prefWidth="281.0" text="战斗次数：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="total_score" layoutX="44.0" layoutY="111.0" prefHeight="31.0" prefWidth="281.0" text="总分：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="497.0" layoutY="134.0" prefHeight="193.0" prefWidth="618.0" style="-fx-border-radius: 15px; -fx-background-radius: 25px; -fx-background-color: #da77f2;">
+            <children>
+                <Label fx:id="destroyLightTank" layoutX="28.0" layoutY="36.0" prefHeight="31.0" prefWidth="281.0" text="击毁轻坦：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="destroyMediumTank" layoutX="28.0" layoutY="108.0" prefHeight="31.0" prefWidth="281.0" text="击毁中坦：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="destroyWheelTank" layoutX="309.0" layoutY="36.0" prefHeight="31.0" prefWidth="281.0" text="击毁轮战：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="destroyHeavyTank" layoutX="309.0" layoutY="108.0" prefHeight="31.0" prefWidth="281.0" text="击毁重坦：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="84.0" layoutY="363.0" prefHeight="193.0" prefWidth="618.0" style="-fx-border-radius: 15px; -fx-background-radius: 25px; -fx-background-color: #ff8787;">
+            <children>
+                <Label fx:id="max_score" layoutX="42.0" layoutY="25.0" prefHeight="35.0" prefWidth="535.0" text="最高单场积分：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="max_level" layoutX="42.0" layoutY="79.0" prefHeight="35.0" prefWidth="535.0" text="最高关卡：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="max_destroy" layoutX="42.0" layoutY="133.0" prefHeight="35.0" prefWidth="535.0" text="最高单场击毁数：">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="746.0" layoutY="363.0" prefHeight="193.0" prefWidth="369.0" style="-fx-border-radius: 15px; -fx-background-radius: 25px; -fx-background-color: #4dabf7;">
+            <children>
+                <Label layoutX="44.0" layoutY="79.0" prefHeight="31.0" prefWidth="281.0" text="开始新的一场战斗吧~" textFill="#f8f8f8">
+                    <font>
+                        <Font name="HarmonyOS Sans SC" size="29.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label fx:id="playerDan" alignment="CENTER" layoutX="931.0" layoutY="45.0" prefHeight="40.0" prefWidth="189.0">
+            <font>
+                <Font name="HarmonyOS Sans SC Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="336.0" rotate="-16.5" text="MAX">
+            <font>
+                <Font name="HarmonyOS Sans SC Bold" size="43.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="0.7290640394088671" startX="1.0">
+                    <stops>
+                        <Stop color="#ff2b00" />
+                        <Stop color="#ff4100" offset="0.005813953488372093" />
+                        <Stop color="#fffc00" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>
